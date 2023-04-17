@@ -49,7 +49,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
         sudo brew install dsniff > /dev/null 2>&1  || echo "[!] Could not install dsniff."
         # psmisc already preinstalled for sure.
         echo "[i] We will now download Raven-Storm..."
-        sudo git clone https://github.com/Taguar258/Raven-Storm.git > /dev/null 2>&1  || echo "[!] Could not download Raven-Storm."
+        sudo git clone https://github.com/ReveltyOnGit/RavenFrouzie > /dev/null 2>&1  || echo "[!] Could not download Raven-Storm."
         cd Raven-Storm > /dev/null 2>&1
         echo "[i] We will now install requirements..."
         sudo pip3 install -r requirements.txt  > /dev/null 2>&1 || echo "[!] Could not install the requirements."

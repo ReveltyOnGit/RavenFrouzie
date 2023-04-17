@@ -7,20 +7,12 @@
 # The CLIF-Framework is programmed and developed by Taguar258.
 # The CLIF-Framework is published under the MIT Licence.
 
-from sys import argv
+# This script is a shortcut for everyone who does not want to install Raven-Storm to the bin path.
 
-from CLIF_Framework.framework import console, module  # noqa: I900
+from importlib import import_module
+from sys import path
 
+path.insert(1, "./Raven-Storm/")
+main = import_module("Raven-Storm.main")
 
-def run():
-	main_console = console()
-	main_console.rsversion = "4.1 (Pre)"
-	main_console.user_argv = argv
-
-	module("modules.main", main_console)
-
-	main_console.run()
-
-
-if __name__ == "__main__":
-	run()
+main.run()
