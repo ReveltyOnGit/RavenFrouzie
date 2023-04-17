@@ -1,0 +1,5 @@
+urllib3==1.25.10
+python_nmap==0.6.1
+Flask
+itsdangerous
+requests==2.24.0
